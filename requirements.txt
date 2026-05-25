@@ -1,0 +1,15 @@
+# apk-hunter Python dependencies
+# All modules used are Python stdlib — no pip install required.
+#
+# stdlib modules used:
+#   argparse, json, os, re, shutil, subprocess, sys, time,
+#   xml.etree.ElementTree, datetime, pathlib
+#
+# Optional / recommended system tools:
+#   apktool     >= 2.9    https://apktool.org
+#   jadx        >= 1.5    https://github.com/skylot/jadx
+#   apksigner              (Android SDK build-tools)
+#   strings               (binutils)
+#   frida-tools           (dynamic analysis, optional)
+#
+# Run install_deps.sh to install all system tools automatically.
