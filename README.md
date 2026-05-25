@@ -263,6 +263,12 @@ For authorized security testing and bug bounty programs only. Only test applicat
 
 ---
 
+## Redacted test on a production app
+<img width="1289" height="641" alt="2026-05-25_15-35" src="https://github.com/user-attachments/assets/f4535a9e-39cc-4fdc-84b8-dfc98b301a13" />
+<img width="1294" height="656" alt="2026-05-25_15-40" src="https://github.com/user-attachments/assets/b825951d-343a-49fa-8f01-9bd0731b1992" />
+<img width="1283" height="640" alt="2026-05-25_15-29" src="https://github.com/user-attachments/assets/a4d8435f-4c36-4ee9-979e-3601438f6fa5" />
+
+
 ## License
 
 MIT
