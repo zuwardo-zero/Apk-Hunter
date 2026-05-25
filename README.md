@@ -1,4 +1,4 @@
-# 🔍 APK Hunter v2
+# 🔍 APK Hunter 
 
 A bug bounty–focused Android APK security analysis tool. Automatically decompiles an APK, extracts everything potentially sensitive or vulnerable, tests Firebase rules, generates PoC intents, and produces a self-contained interactive HTML report.
 
