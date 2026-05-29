@@ -1,27 +1,27 @@
 # 🔍 APK Hunter 
 
-A bug bounty–focused Android APK security analysis tool. Automatically decompiles an APK, extracts everything potentially sensitive or vulnerable, tests Firebase rules, generates PoC intents, and produces a self-contained interactive HTML report.
+A bug bounty focused Android APK security analysis tool. Automatically decompiles an APK, extracts everything potentially sensitive or vulnerable, tests Firebase rules, generates PoC intents, and produces a single interactive HTML report.
 
 ---
 
 ## Features
 
-- **Full decompilation** via `apktool` (smali + resources) and `jadx` (Java source)
-- **Manifest analysis** — debuggable, allowBackup, exported components, cleartext traffic, permissions
-- **Secret & credential scanning** — AWS, Google API, Firebase, JWT, Stripe, Twilio, Slack, Discord, SendGrid, Mailgun, private keys, hardcoded passwords + 190 more via apkleaks
-- **SDK noise filtering** — 50+ third-party SDK prefixes excluded by default (okhttp3, BouncyCastle, Google, Facebook, Tencent, etc.) — near-zero false positives on app code
-- **Dangerous API detection** — WebView misconfigurations, SSL bypass, AES-ECB/DES/MD5, world-readable storage, DexClassLoader, runtime exec, raw SQL, deep link injection
-- **Firebase auto-tester** — probes every `*.firebaseio.com` URL for unauthenticated read access automatically
-- **PoC intent generator** — generates ready-to-run `poc_intents.sh` with `adb shell am start/broadcast/startservice` commands for every exported component
-- **URL & endpoint extraction** — all HTTP(S) endpoints from source and resources, SDK noise removed
-- **Certificate analysis** — APK signing info, embedded `.pem`/`.crt`/`.p12`/`.bks`, inline PEM blocks
-- **Network security config** — cleartext traffic, user cert trust (Burp-ready detection)
-- **Native library analysis** — suspicious strings in `.so` files
-- **Split APK / `.apkm` support** — extracts bundles, scans base.apk + all feature splits
-- **apkleaks integration** — load 190+ community patterns from apkleaks `regexes.json`
-- **Interactive HTML report** — self-contained, filterable tables, App/SDK tabs, sidebar nav
-- **JSON output** — machine-readable for CI/CD pipelines
-- **Pure bash fallback** — works without Python (includes Firebase probe via curl)
+- **Full decompilation**: via `apktool` (smali + resources) and `jadx` (Java source)
+- **Manifest analysis**: debuggable, allowBackup, exported components, cleartext traffic, permissions
+- **Secret & credential scanning**: AWS, Google API, Firebase, JWT, Stripe, Twilio, Slack, Discord, SendGrid, Mailgun, private keys, hardcoded passwords + 190 more via apkleaks
+- **SDK noise filtering**: 50+ third-party SDK prefixes excluded by default (okhttp3, BouncyCastle, Google, Facebook, Tencent, etc.). near-zero false positives on app code
+- **Dangerous API detection**: WebView misconfigurations, SSL bypass, AES-ECB/DES/MD5, world-readable storage, DexClassLoader, runtime exec, raw SQL, deep link injection
+- **Firebase auto-tester**: probes every `*.firebaseio.com` URL for unauthenticated read access automatically
+- **PoC intent generator**: generates ready-to-run `poc_intents.sh` with `adb shell am start/broadcast/startservice` commands for every exported component
+- **URL & endpoint extraction**: all HTTP(S) endpoints from source and resources, SDK noise removed
+- **Certificate analysis**: APK signing info, embedded `.pem`/`.crt`/`.p12`/`.bks`, inline PEM blocks
+- **Network security config**: cleartext traffic, user cert trust (Burp-ready detection)
+- **Native library analysis**: suspicious strings in `.so` files
+- **Split APK / `.apkm` support**: extracts bundles, scans base.apk + all feature splits
+- **apkleaks integration**: load 190+ community patterns from apkleaks `regexes.json`
+- **Interactive HTML report**: self-contained, filterable tables, App/SDK tabs, sidebar nav
+- **JSON output**: machine-readable for CI/CD pipelines
+- **Pure bash fallback**: works without Python (includes Firebase probe via curl)
 
 ---
 
