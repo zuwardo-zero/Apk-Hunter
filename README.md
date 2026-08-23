@@ -234,23 +234,6 @@ Skip with `--no-firebase` for offline use.
 
 ---
 
-## Optional Dynamic Analysis
-
-```bash
-# SSL pinning bypass with objection
-objection -g com.target.app explore
-# inside objection shell:
-android sslpinning disable
-
-# frida hook for addJavascriptInterface calls
-frida -U -f com.target.app -l frida_scripts/js_interface_hook.js --no-pause
-
-# bypass root detection
-objection -g com.target.app explore --startup-command 'android root disable'
-```
-
----
-
 ## Contributing
 
 Pull requests welcome. To add a secret pattern, append a `(name, regex, severity)` tuple to `SECRET_PATTERNS` in `apk_hunter.py`. To add an SDK exclusion prefix, append to `THIRD_PARTY_PREFIXES`.
